@@ -112,12 +112,12 @@ $(document).ready(function() {
     var questions = object.question;
     var multiAnswers = object.answers;
 
-    $('#totalQ').before('<h2>' + questions + '</h2>');
+    $('#quiz').append('<h2>' + questions + '</h2>');
 
     let j = 0;
 
     for (answer of multiAnswers) {
-      $('#totalQ').before('<input type="radio" name="' + i + '" value="' + j + '">' + answer + '</input>');
+      $('#quiz').append('<input type="radio" name="' + i + '" value="' + j + '">' + answer + '</input>');
 
 
       j++;
@@ -153,12 +153,12 @@ $(document).ready(function() {
       k++;
     }
     if (finalScore >= 15) {
-      alert("GENIUS. You scored" + finalScore + "/20" )
+      alert("GENIUS!!!. You scored" + finalScore + "/20" )
     } else if (finalScore <= 14 && finalScore >= 10 ){
       alert("Not bad. You scored" + finalScore + "/20")
     } else if (finalScore <= 9 && finalScore >= 5) {
       alert("Hmmm, you should read more. You scored" + finalScore + "/20")
-    } else if (finalScore <= 4 && finalScore >= 0 ) {
+    } else if (finalScore <= 4 ) {
       alert("Refresh and try again. You scored" + finalScore + "/20")
     };
 
