@@ -158,7 +158,7 @@ $(document).ready(function() {
       alert("Not bad. You scored" + finalScore + "/20")
     } else if (finalScore <= 9 && finalScore >= 5) {
       alert("Hmmm, you should read more. You scored" + finalScore + "/20")
-    } else if (finalScore <= 9 && finalScore >= 5 ) {
+    } else if (finalScore <= 4 && finalScore >= 0 ) {
       alert("Refresh and try again. You scored" + finalScore + "/20")
     };
 
